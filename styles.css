@@ -1,0 +1,85 @@
+/* Setting fade transition and default settings */
+body {
+  margin: 0;
+  color: #000;
+  background-color: #f4f4f4;
+  transition: background-color 1s ease;
+}
+
+/* panel styles */
+.panel {
+  /* min height incase content is higher than window height */
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: lato, sans-serif;
+  /* outline: 10px solid hotpink; */
+  /* turn above on to see the edge of panels */
+}
+
+/* colours */
+.at-landing {
+  background-color: #F4F4F4;
+}
+.at-info {
+  background-color: #F2293A;
+}
+.at-give {
+  background-color: #6132cf;
+}
+.at-subscribe {
+  background-color: #2F8FED;
+}
+
+/* styling for demo, can ignore */
+body {
+  text-align: center;
+  font-size: 120%;
+  line-height: 1.618;
+}
+h1, h2 {
+  font-size: 3em;
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+}
+p {
+  max-width: 30em;
+  margin-bottom: 1.618em;
+}
+a {
+  color: #4332CF;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+  transition: all .15s;
+  background-color: #f4f4f4;
+}
+
+nav a {
+  padding: 0 5%;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.nav-full {
+  height: 25%;
+}
+
+.nav-diminished {
+  height: 10%;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.active-navlink {
+  font-weight: 300;
+}
