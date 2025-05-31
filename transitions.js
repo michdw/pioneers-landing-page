@@ -1,5 +1,13 @@
 $(window).scroll(function () {
 
+  function updateNavLinks(section) {
+    if (($body).hasClass('at-' + section)) {
+      let $activeNavLink = $('a[href="#' + section + '"]')
+      $activeNavLink.addClass('active-navlink');
+      $('a').not($activeNavLink).removeClass('active-navlink');
+    }
+  }
+
   // selectors
   let $window = $(window),
     $body = $('body'),
@@ -35,29 +43,11 @@ $(window).scroll(function () {
       
       $body.addClass('at-' + atSection);
 
-      if(($body).hasClass('at-landing')) {
-        let $activeNavLink = $('a[href="#landing"]')
-        $activeNavLink.addClass('active-navlink');
-        $('a').not($activeNavLink).removeClass('active-navlink');
-      }
+      updateNavLinks('landing')
+      updateNavLinks('info')
+      updateNavLinks('give')
+      updateNavLinks('subscribe')
 
-      if (($body).hasClass('at-info')) {
-        let $activeNavLink = $('a[href="#info"]')
-        $activeNavLink.addClass('active-navlink');
-        $('a').not($activeNavLink).removeClass('active-navlink');
-      }
-
-      if (($body).hasClass('at-give')) {
-        let $activeNavLink = $('a[href="#give"]')
-        $activeNavLink.addClass('active-navlink');
-        $('a').not($activeNavLink).removeClass('active-navlink');
-      }
-
-      if (($body).hasClass('at-subscribe')) {
-        let $activeNavLink = $('a[href="#subscribe"]')
-        $activeNavLink.addClass('active-navlink');
-        $('a').not($activeNavLink).removeClass('active-navlink');
-      }
     }
   });
 
