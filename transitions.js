@@ -13,7 +13,7 @@ $(window).scroll(function () {
     $body = $('body'),
     $panel = $('.panel');
 
-  if ($window.scrollTop() > 0) {
+  if ($window.scrollTop() > $window.height() / 5) {
     $('#vanishingText').addClass('invisible');
     $('h1').css('opacity', '0');
     $('nav').removeClass('nav-full').addClass('nav-diminished');
@@ -29,18 +29,13 @@ $(window).scroll(function () {
 
   $panel.each(function () {
     let $this = $(this);
-
-    // if position is within range of this panel.
-    // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
-    // Remember we set the scroll to 33% earlier in scroll var.
+    
     if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
 
-      // Remove all classes on body
       $body.removeClass(function (index, css) {
         return (css.match(/(^|\s)at-\S+/g) || []).join(' ');
       });
 
-      // Add class of currently active div
       let atSection = $(this).data('at');
 
       $body.addClass('at-' + atSection);

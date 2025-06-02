@@ -1,0 +1,30 @@
+.at-landing {
+  background-color: #e9e9e9;
+}
+.at-info {
+  background-color: #adbb86;
+}
+.at-give {
+  background-color: #c9c953;
+}
+.at-subscribe {
+  background-color: #d86947;
+}
+
+.panel {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#landing {
+  padding-top: 25vh;
+  min-height: 75vh;
+}
+
+.panel:not(#landing) {
+  padding-top: 5vh;
+  padding-bottom: 25vh;
+}

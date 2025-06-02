@@ -4,40 +4,8 @@ body {
   color: #000;
   background-color: #e9e9e9;
   transition: background-color 0.8s ease;
-}
-
-/* colours */
-.at-landing {
-  background-color: #e9e9e9;
-}
-.at-info {
-  background-color: #adbb86;
-}
-.at-give {
-  background-color: #c9c953;
-}
-.at-subscribe {
-  background-color: #d86947;
-}
-
-
-/* panel styles */
-.panel {
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
   font-family: lato, sans-serif;
-}
 
-#landing {
-  padding-top: 25vh;
-  min-height: 75vh;
-}
-
-#info, #give {
-  padding-bottom: 25vh;
 }
 
 /* styling for demo, can ignore */
@@ -93,11 +61,11 @@ nav a {
   height: 10vh;
 }
 
-.invisible {
-  opacity: 0;
-}
-
 .active-navlink {
   font-weight: 300;
   opacity: 0.8;
+}
+
+.invisible {
+  opacity: 0;
 }
