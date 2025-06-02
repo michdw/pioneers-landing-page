@@ -13,17 +13,19 @@ $(window).scroll(function () {
     $body = $('body'),
     $panel = $('.panel');
 
-  if($window.scrollTop() > 0) {
+  if ($window.scrollTop() > 0) {
     $('#vanishingText').addClass('invisible');
+    $('h1').css('opacity', '0');
     $('nav').removeClass('nav-full').addClass('nav-diminished');
   }
-  if($window.scrollTop() == 0) {
+  if ($window.scrollTop() == 0) {
     $('#vanishingText').removeClass('invisible');
+    $('h1').css('opacity', '1')
     $('nav').removeClass('nav-diminished').addClass('nav-full');
   }
 
   // Change 33% earlier than scroll position so colour is there when you arrive.
-  let scroll = $window.scrollTop() + ($window.height() / 3);
+  let scroll = $window.scrollTop() + ($window.height() / 2);
 
   $panel.each(function () {
     let $this = $(this);
@@ -37,10 +39,10 @@ $(window).scroll(function () {
       $body.removeClass(function (index, css) {
         return (css.match(/(^|\s)at-\S+/g) || []).join(' ');
       });
-      
+
       // Add class of currently active div
       let atSection = $(this).data('at');
-      
+
       $body.addClass('at-' + atSection);
 
       updateNavLinks('landing')

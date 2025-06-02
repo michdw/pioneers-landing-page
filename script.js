@@ -10,12 +10,14 @@ function navigate(link, section) {
 
 $(document).ready(function () {
 
-    // $('section#landing').load('components/landing.html');
-    $('section#info').load('components/info.html');
-    $('section#give').load('components/give.html');
-    $('section#subscribe').load('components/subscribe.html');
+    $('a[href="landing"]').addClass('active-navlink')
 
-    // navigate('a#landing', 'section#landing');
+    // $('section#landing').load('components/landing.html');
+    // $('section#info').load('components/info.html');
+    // $('section#give').load('components/give.html');
+    // $('section#subscribe').load('components/subscribe.html');
+
+    navigate('a#landing', 'section#landing');
     navigate('a#info', 'section#info');
     navigate('a#give', 'section#give');
     navigate('a#subscribe', 'section#subscribe');
