@@ -3,5 +3,5 @@ $(document).ready(function () {
 });
 
 $(window).load(function() {
-    $('#loading-screen').delay(250).fadeOut(0)
+    $('#loading-screen').delay(200).fadeOut(0)
 })
