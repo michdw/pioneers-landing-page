@@ -10,11 +10,11 @@ $window.load(function () {
     if ($window.scrollTop() > 0) $('#landing-img').fadeOut(200);
 
     if ($window.scrollTop() > $window.height() / 10) {
-      $('#landing h1').css('opacity', '0');
+      $('#name-heading').css('opacity', '0');
       $('nav').removeClass('nav-full').addClass('nav-diminished');
     }
     if ($window.scrollTop() == 0) {
-      $('#landing h1').css('opacity', '1')
+      $('#name-heading').css('opacity', '1')
       $('#landing-img').delay(200).fadeIn(150);
       $('nav').removeClass('nav-diminished').addClass('nav-full');
     }
