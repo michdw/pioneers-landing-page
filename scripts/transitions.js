@@ -1,18 +1,11 @@
-$(window).scroll(function () {
+// selectors
+let $window = $(window),
+  $body = $('body'),
+  $panel = $('.panel');
 
-  function updateNavLinks(section) {
-    if (($body).hasClass('at-' + section)) {
-      let $activeNavLink = $('a[href="#' + section + '"]')
-      $activeNavLink.addClass('active-navlink');
-      $('a').not($activeNavLink).removeClass('active-navlink');
-    }
-  }
+$window.scroll(function () {
 
-  // selectors
-  let $window = $(window),
-    $body = $('body'),
-    $panel = $('.panel');
-
+  // navbar and image behavior dependent on scroll position
   if ($window.scrollTop() > 0) $('#landing-img').fadeOut(200);
 
   if ($window.scrollTop() > $window.height() / 10) {
@@ -21,16 +14,26 @@ $(window).scroll(function () {
   }
   if ($window.scrollTop() == 0) {
     $('h1').css('opacity', '1')
-    $('#landing-img').delay(100).fadeIn();
+    $('#landing-img').delay(100).fadeIn(200);
     $('nav').removeClass('nav-diminished').addClass('nav-full');
   }
 
-  // Change 33% earlier than scroll position so colour is there when you arrive.
+  // define the point at which bg color changes between panels
   let scroll = $window.scrollTop() + ($window.height() / 2);
+
+  // show lighter text on navbar link for current location
+  function updateNavLinks(section) {
+    if (($body).hasClass('at-' + section)) {
+      let $activeNavLink = $('a[href="#' + section + '"]')
+      $activeNavLink.addClass('active-navlink');
+      $('a').not($activeNavLink).removeClass('active-navlink');
+    }
+  }
 
   $panel.each(function () {
     let $this = $(this);
     
+    // color transitions
     if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
 
       $body.removeClass(function (index, css) {
@@ -41,8 +44,9 @@ $(window).scroll(function () {
 
       $body.addClass('at-' + atSection);
 
+      // nav link transitions
       updateNavLinks('landing')
-      updateNavLinks('info')
+      // updateNavLinks('info')
       updateNavLinks('give')
       updateNavLinks('subscribe')
 

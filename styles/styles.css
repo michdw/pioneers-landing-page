@@ -19,7 +19,7 @@ h2 {
   font-size: 3em;
   letter-spacing: -0.05em;
   line-height: 1.1;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 p {
   max-width: 30em;
@@ -33,7 +33,7 @@ nav {
   justify-content: center;
   top: 0;
   width: 100%;
-  transition: all .15s;
+  transition: all 0.15s;
 }
 
 nav > div {
@@ -71,5 +71,20 @@ nav a {
   position: fixed;
   left: 0;
   max-height: 100%;
-  opacity: .25;
+  opacity: 0.25;
+}
+
+#loading-screen {
+  z-index: 200;
+  background-color: #e9e9e9;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
 }
