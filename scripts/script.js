@@ -14,6 +14,6 @@ $(document).ready(function () {
 });
 
 $(window).load(function() {
-    $('#loading-screen').delay(99).hide(0);
+    $('#loading-screen').hide();
 
 })
