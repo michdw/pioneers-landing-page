@@ -9,7 +9,6 @@
 
 
 $(document).ready(function () {
-    // $('body').css('background-image', 'url("../asia-cropped.png")')
     $('#mailerSignup').load('components/mailerSignup.html')
 
 });
