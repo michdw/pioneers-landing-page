@@ -1,5 +1,3 @@
-const { useSyncExternalStore } = require("react");
-
 $(document).ready(function () {
     $('#mailform').load('components/mailform.html')
 });
