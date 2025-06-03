@@ -27,6 +27,8 @@ p {
 }
 
 nav {
+  height: 25vh;
+
   position: fixed;
   display: flex;
   align-items: center;
