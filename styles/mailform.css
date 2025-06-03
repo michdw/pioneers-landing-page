@@ -47,7 +47,7 @@
   display: table;
   margin: 0 auto;
   position: static;
-  width: 100% !important;
+  max-width: 90% !important;
 }
 #mlb2-26754007.ml-form-embedContainer h4,
 #mlb2-26754007.ml-form-embedContainer p,
