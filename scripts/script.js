@@ -10,10 +10,10 @@
 
 $(document).ready(function () {
     $('#mailerSignup').load('components/mailerSignup.html')
-
+    
 });
 
 $(window).load(function() {
-    $('#loading-screen').remove();
+    $('#loading-screen').delay(99).hide(0);
 
 })
