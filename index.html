@@ -13,10 +13,32 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=block"
       rel="stylesheet"
     />
+    <!-- MailerLite Universal -->
+    <script>
+      (function (w, d, e, u, f, l, n) {
+        (w[f] =
+          w[f] ||
+          function () {
+            (w[f].q = w[f].q || []).push(arguments);
+          }),
+          (l = d.createElement(e)),
+          (l.async = 1),
+          (l.src = u),
+          (n = d.getElementsByTagName(e)[0]),
+          n.parentNode.insertBefore(l, n);
+      })(
+        window,
+        document,
+        "script",
+        "https://assets.mailerlite.com/js/universal.js",
+        "ml"
+      );
+      ml("account", "1544845");
+    </script>
+    <!-- End MailerLite Universal -->
   </head>
 
   <body>
-
     <nav class="nav-full">
       <div>
         <a data="at-landing" href="#landing">Home</a>
@@ -30,7 +52,6 @@
     </nav>
 
     <section class="panel" id="landing" data-at="landing">
-
       <div>
         <h1 id="vanishingText">Magic scrolling colours</h1>
         <p>
@@ -104,18 +125,7 @@
 
     <section class="panel" id="subscribe" data-at="subscribe">
       <h2>subscribe</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente cum
-        natus sit, aspernatur amet quia explicabo esse, eaque assumenda
-        cupiditate beatae deserunt sint, eum eius. Modi commodi nam veritatis
-        maxime!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente cum
-        natus sit, aspernatur amet quia explicabo esse, eaque assumenda
-        cupiditate beatae deserunt sint, eum eius. Modi commodi nam veritatis
-        maxime!
-      </p>
+      <div id="mailerSignup"></div>
     </section>
 
     <script
