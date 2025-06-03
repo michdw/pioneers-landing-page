@@ -15,6 +15,6 @@ $(document).ready(function () {
 });
 
 $(window).load(function() {
-    $('#loading-screen').remove();
+    // $('#loading-screen').remove();
 
 })
