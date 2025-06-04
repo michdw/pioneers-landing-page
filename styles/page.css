@@ -2,7 +2,7 @@
 body {
   margin: 0;
   color: #000;
-  background-color: #e9e9e9;
+  background-color: #d9d9d9;
   transition: background-color 0.8s ease;
   font-family: "lato", sans-serif;
 }
@@ -73,12 +73,12 @@ nav a {
   position: fixed;
   left: 0;
   max-height: 100%;
-  opacity: 0.25;
+  opacity: 0.4;
 }
 
 #loading-screen {
   z-index: 200;
-  background-color: #e9e9e9;
+  background-color: #d9d9d9;
   position: fixed;
   height: 100%;
   width: 100%;

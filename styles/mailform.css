@@ -322,7 +322,7 @@
   .ml-form-embedBody
   .ml-form-fieldRow
   input {
-  background-color: #e9e9e9 !important;
+  background-color: #d9d9d9 !important;
   color: #333333 !important;
   border-color: #cccccc;
   border-radius: 4px !important;
@@ -1010,7 +1010,7 @@
   .ml-form-embedBody
   .ml-form-horizontalRow
   input {
-  background-color: #e9e9e9;
+  background-color: #d9d9d9;
   color: #333333;
   border-color: #cccccc;
   border-radius: 4px;
