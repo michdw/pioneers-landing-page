@@ -2,7 +2,7 @@
   background-color: #d9d9d9;
 }
 .at-info {
-  background-color: #adbb86;
+  background-color: #a0a88c;
 }
 .at-give {
   background-color: #c9c953;
@@ -28,15 +28,6 @@
 #name-heading {
   margin-top: 0;
   font-size: 2.5em;
-}
-
-#down-arrow {
-  width: 3em;
-  margin-top: 2em;
-}
-
-#down-arrow:hover {
-  opacity: .8;
 }
 
 /*  */

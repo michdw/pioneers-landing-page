@@ -15,8 +15,13 @@ $window.load(function () {
     }
     if ($window.scrollTop() == 0) {
       $('#name-heading').css('opacity', '1')
-      $('#landing-img').delay(200).fadeIn(150)
-      $('nav').removeClass('nav-diminished').addClass('nav-full')
+      setTimeout(
+        function () {
+          if ($window.scrollTop() == 0) {
+            $('#landing-img').fadeIn(150);
+            $('nav').removeClass('nav-diminished').addClass('nav-full')
+          }
+        }, 200);
     }
 
     // define the point at which bg color changes between panels
