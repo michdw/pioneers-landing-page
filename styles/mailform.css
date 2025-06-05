@@ -57,12 +57,12 @@ LOADER
   letter-spacing: normal !important;
 }
 #mlb2-26754007.ml-form-embedContainer .ml-form-embedWrapper {
-  background-color: #f6f6f633;
-
+  /* background-color: #f6f6f633; */
   border-width: 0px;
   border-color: transparent;
   border-radius: 4px;
   border-style: solid;
+  border-top: 4px solid black;
   box-sizing: border-box;
   display: inline-block !important;
   margin: 0;
@@ -329,11 +329,11 @@ LOADER
   border-style: solid !important;
   border-width: 1px !important;
   font-family: "lato", Arial, Helvetica, sans-serif;
-  font-size: .95em !important;
+  font-size: .8em !important;
   height: auto;
   line-height: 21px !important;
   margin-bottom: 0;
-  margin-top: 0;
+  margin-top: 1em;
   margin-left: 0;
   margin-right: 0;
   padding: 10px 10px !important;

@@ -32,7 +32,7 @@
 
 /*  */
 .panel:not(#landing) {
-  padding-top: 5vh;
+  padding-top: 10vh;
 }
 
 #info, #give {
@@ -41,6 +41,18 @@
 
 #subscribe {
   min-height: auto;
-  padding-bottom: 25vh;
+  padding-bottom: 10vh;
 
+}
+
+/* footer */
+#footer {
+  height: 1.5em;
+  display: flex;
+  padding: 10px;
+  background-color: black;
+}
+
+#footer img {
+  height: 100%;
 }

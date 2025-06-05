@@ -21,7 +21,7 @@ $window.load(function () {
             $('#landing-img').fadeIn(150);
             $('nav').removeClass('nav-diminished').addClass('nav-full')
           }
-        }, 200);
+        }, 150);
     }
 
     // define the point at which bg color changes between panels

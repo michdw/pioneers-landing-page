@@ -34,7 +34,7 @@ nav {
   justify-content: center;
   top: 0;
   width: 100%;
-  transition: all 0.15s;
+  transition: all 0.2s;
 }
 
 nav > div {
@@ -98,5 +98,5 @@ nav a {
 }
 
 .dbl-arrow:hover {
-  opacity: .8;
+  scale: 1.1;
 }
