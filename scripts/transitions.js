@@ -7,10 +7,11 @@ $window.load(function () {
   $window.scroll(function () {
 
     // navbar and image behavior dependent on scroll position
-    if ($window.scrollTop() > 0) $('#landing-img').fadeOut(200)
+    if ($window.scrollTop() > 0) $('#name-heading').css('opacity', '0')
 
-    if ($window.scrollTop() > $window.height() / 10) {
-      $('#name-heading').css('opacity', '0')
+
+    if ($window.scrollTop() > $window.height() / 8) {
+      $('#landing-img').fadeOut(200)
       $('nav').removeClass('nav-full').addClass('nav-diminished')
     }
     if ($window.scrollTop() == 0) {
