@@ -91,6 +91,7 @@ nav a {
   font-family: sans-serif;
 }
 
+/* navigation arrows */
 
 .dbl-arrow {
   width: 3em;
@@ -99,4 +100,8 @@ nav a {
 
 .dbl-arrow:hover {
   scale: 1.1;
+}
+
+.invisible {
+  visibility: hidden;
 }
