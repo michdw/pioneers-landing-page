@@ -1,5 +1,5 @@
+
 $(document).ready(function () {
-    // $('#mailform').load('components/mailform.html')
     $('.dbl-arrow').click(function () {
         let dest = '#' + $(this).data('goto')
         $('html,body').animate({

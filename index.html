@@ -87,13 +87,13 @@
     <div id="backToTop">
       <img class="dbl-arrow" data-goto="landing" src="images/dbl-blue.svg" alt="" style="rotate: 180deg" />
     </div>
-
     <h2>subscribe</h2>
-    <!-- <div id="mailform"></div> -->
+
+    <!-- adapted from MailerLite -->
     <style type="text/css">
       @import url("https://assets.mlcdn.com/fonts.css?version=1748530");
     </style>
-
+    <link rel="stylesheet" type="text/css" href="../styles/mailform.css" media="screen" />
 
     <div id="mlb2-26754007" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-26754007">
       <div class="ml-form-align-center">
@@ -144,23 +144,26 @@
         </div>
       </div>
     </div>
+
+    <script>
+      function ml_webform_success_26754007() {
+        var $ = ml_jQuery || jQuery;
+        $(".ml-subscribe-form-26754007 .row-success").show();
+        $(".ml-subscribe-form-26754007 .row-form").hide();
+      }
+    </script>
+
+    <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v176e10baa5e7ed80d35ae235be3d5024"
+      type="text/javascript"></script>
+    <script>
+      fetch(
+        "https://assets.mailerlite.com/jsonp/1544845/forms/156150849838515879/takel"
+      );
+    </script>
+    <!-- end of MailerLite code -->
+     
   </section>
 
-  <!-- mailerLite scripts -->
-  <script>
-    function ml_webform_success_26754007() {
-      var $ = ml_jQuery || jQuery;
-      $(".ml-subscribe-form-26754007 .row-success").show();
-      $(".ml-subscribe-form-26754007 .row-form").hide();
-    }
-  </script>
-  <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v176e10baa5e7ed80d35ae235be3d5024"
-    type="text/javascript"></script>
-  <script>
-    fetch(
-      "https://assets.mailerlite.com/jsonp/1544845/forms/156150849838515879/takel"
-    );
-  </script>
   <!-- other scripts -->
   <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
   <script type="text/javascript" src="scripts/script.js"></script>
