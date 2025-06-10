@@ -35,7 +35,7 @@ $window.load(function () {
           $activeNavLink.addClass('active-navlink')
           $('a').not($activeNavLink).removeClass('active-navlink')
         }
-        if ($body.hasClass('at-subscribe')) {
+        if ($body.hasClass('at-follow')) {
           $lastDownArrow.addClass('invisible')
           $backToTop.removeClass('invisible')
         } else {
@@ -64,7 +64,7 @@ $window.load(function () {
           updateNavLinks('landing')
           updateNavLinks('info')
           updateNavLinks('give')
-          updateNavLinks('subscribe')
+          updateNavLinks('follow')
         }
       })
     })

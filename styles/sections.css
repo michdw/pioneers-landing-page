@@ -7,7 +7,7 @@
 .at-give {
   background-color: #c9c953;
 }
-.at-subscribe {
+.at-follow {
   background-color: #d86947;
 }
 
@@ -45,23 +45,8 @@
   padding-bottom: 10vh
 }
 
-#subscribe {
+#follow {
   min-height: auto;
   padding-bottom: 10vh;
-}
-
-/* footer */
-#footer {
-  padding-top: 10vh;
-  padding-bottom: 5vh;
-}
-
-#footer a {
-  display: inline-block;
-  min-width: 2.5em;
-}
-
-#footer img {
-  height: 2em;
 }
 
