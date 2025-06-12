@@ -12,6 +12,7 @@
 }
 
 .panel {
+  padding-top: 20vh;
   min-height: 90vh;
   display: flex;
   flex-direction: column;
@@ -19,9 +20,12 @@
   align-items: center;
 }
 
+.panel:not(#landing) {
+  padding-bottom: 10vh;
+}
+
 /* landing */
 #landing {
-  padding-top: 20vh;
   min-height: 80vh;
 }
 
@@ -32,21 +36,27 @@
 }
 
 #landing-icon {
-   width: 200px;
-   margin: 0;
+  width: 200px;
+  margin: 0;
 }
 
-/*  */
-.panel:not(#landing) {
-  padding-top: 10vh;
+/* info */
+
+#profile-pic {
+  width: 20vw;
+  max-width: 200px;
+  margin: .5em;
+  float: right;
 }
 
-#info, #give {
-  padding-bottom: 10vh
+/* give */
+#give {
 }
+
+/* follow */
 
 #follow {
-  min-height: auto;
-  padding-bottom: 10vh;
+  padding-top: 10vh;
+  min-height: 80vh;
 }
 

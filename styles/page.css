@@ -14,15 +14,21 @@ body {
   line-height: 1.5;
 }
 
-h1,
-h2 {
+section > * {
+  max-width: 30em;
+  margin: auto 10px;
+}
+
+h1 {
   font-size: 3em;
   letter-spacing: -0.05em;
   line-height: 1.1;
   transition: all 0.3s;
 }
+h2 {
+  font-size: 2em;
+}
 p {
-  max-width: 30em;
   margin-bottom: 1.5em;
 }
 
@@ -96,7 +102,7 @@ nav a {
 
 .dbl-arrow {
   width: 3em;
-  margin-top: 2em;
+  margin: 2em;
 }
 
 .dbl-arrow:hover {
@@ -108,14 +114,13 @@ nav a {
 }
 
 /* nav for mobile */
-@media (max-width: 480px) {
-
+@media (max-width: 500px) {
   nav div {
     width: 25vw;
     padding: 0;
   }
 
-  nav a{
+  nav a {
     font-size: 1.05em;
     margin: auto 0;
     min-width: 16vw;
