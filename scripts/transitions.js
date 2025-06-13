@@ -2,8 +2,8 @@
 let $window = $(window)
 let $body = $('body')
 let $panel = $('.panel')
-let $lastDownArrow = $('#give .dbl-arrow')
-let $backToTop = $('#backToTop')
+// let $lastDownArrow = $('#give .dbl-arrow')
+// let $backToTop = $('#backToTop')
 
 $window.load(function () {
   $window
@@ -35,13 +35,13 @@ $window.load(function () {
           $activeNavLink.addClass('active-navlink')
           $('a').not($activeNavLink).removeClass('active-navlink')
         }
-        if ($body.hasClass('at-follow')) {
-          $lastDownArrow.addClass('invisible')
-          $backToTop.removeClass('invisible')
-        } else {
-          $backToTop.addClass('invisible')
-          $lastDownArrow.removeClass('invisible')
-        }
+        // if ($body.hasClass('at-follow')) {
+        //   $lastDownArrow.addClass('invisible')
+        //   $backToTop.removeClass('invisible')
+        // } else {
+        //   $backToTop.addClass('invisible')
+        //   $lastDownArrow.removeClass('invisible')
+        // }
       }
 
       $panel.each(function () {
