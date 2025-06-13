@@ -18,7 +18,9 @@ section > * {
   max-width: 30em;
   margin: auto 10px;
 }
-
+h1, h2 {
+  font-weight: 300;
+}
 h1 {
   font-size: 3em;
   letter-spacing: -0.05em;
@@ -26,10 +28,15 @@ h1 {
   transition: all 0.3s;
 }
 h2 {
-  font-size: 2em;
+  font-size: 1.8em;
+  margin: 0
 }
 p {
   margin-bottom: 1.5em;
+}
+
+a {
+  color: midnightblue;
 }
 
 /* navbar */

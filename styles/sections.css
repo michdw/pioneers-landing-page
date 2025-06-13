@@ -12,27 +12,24 @@
 }
 
 .panel {
-  padding-top: 20vh;
   min-height: 90vh;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
-.panel:not(#landing) {
-  padding-bottom: 10vh;
-}
-
 /* landing */
 #landing {
   min-height: 80vh;
+  padding-top: 20vh;
 }
 
 #name-heading {
   margin: 0;
   margin-bottom: 2vh;
-  font-size: 2.5em;
 }
 
 #landing-icon {
@@ -42,21 +39,51 @@
 
 /* info */
 
+#info {
+}
+
+#info p {
+  font-size: .9em;
+}
+
 #profile-pic {
-  width: 20vw;
-  max-width: 200px;
+  width: 25vw;
+  max-width: 175px;
+  min-width: 100px;
   margin: .5em;
   float: right;
 }
 
 /* give */
-#give {
+#give p {
+  font-size: .9em;
+}
+
+/* styled to match the mailerlite subscribe button in mailform.css */
+#give button {
+  background-color: #000000;
+  border: none;
+  border-radius: 4px;
+  box-shadow: none;
+  color: #ffffff;
+  font-size: .95em;
+  line-height: 21px;
+  height: auto;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#give button a {
+  color: white;
+  text-decoration: none;
 }
 
 /* follow */
 
 #follow {
-  padding-top: 10vh;
   min-height: 80vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
