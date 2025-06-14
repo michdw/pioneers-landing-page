@@ -2,7 +2,7 @@
   background-color: #d9d9d9;
 }
 .at-info {
-  background-color: #b3b492;
+  background-color: #999ea3;
 }
 .at-give {
   background-color: #d7b067;
@@ -43,9 +43,9 @@
 /* info */
 
 #profile-pic {
-  width: 25vw;
+  width: 150px;
   max-width: 175px;
-  min-width: 100px;
+  min-width: 140px;
   margin: .5em;
   float: right;
 }
