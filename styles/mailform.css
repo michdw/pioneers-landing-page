@@ -62,7 +62,7 @@
 }
 
 #mlb2-26754007.ml-form-embedContainer .ml-form-embedWrapper {
-  background-color: #f6f6f6;
+  background-color: #f0f0f0;
 
   border-width: 0px;
   border-color: transparent;
@@ -152,8 +152,8 @@
   h4 {
   color: #000000;
   font-family: "Lato", sans-serif;
-  font-size: 30px;
-  font-weight: 400;
+  /* font-size: 30px; */
+  /* font-weight: 400; */
   margin: 0 0 10px 0;
   text-align: left;
   word-break: break-word;
@@ -352,7 +352,7 @@
   .ml-form-embedBody
   .ml-form-fieldRow
   input {
-  background-color: #ffffff !important;
+  background-color: #f9f9f9 !important;
   color: #333333 !important;
   border-color: #cccccc;
   border-radius: 4px !important;

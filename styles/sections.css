@@ -71,7 +71,7 @@
 }
 
 #up-arrow {
-  transform: translateY(50%);
+  transform: translateY(100%);
 }
 
 #up-arrow * {
