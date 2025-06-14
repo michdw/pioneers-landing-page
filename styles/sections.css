@@ -5,7 +5,7 @@
   background-color: #b3b492;
 }
 .at-give {
-  background-color: #c3b55b;
+  background-color: #d7b967;
 }
 .at-follow {
   background-color: #ce6f52;
@@ -23,7 +23,6 @@
 
 /* landing */
 #landing {
-  min-height: 80vh;
   padding-top: 20vh;
 }
 
@@ -51,10 +50,6 @@
   float: right;
 }
 
-#info p {
-  margin-top: 0;
-}
-
 /* give */
 
 #give-btn {
@@ -66,13 +61,17 @@
   height: auto;
   font-size: 1.1em;
   text-decoration: none;
-  padding: .35em 2em;
+  padding: .5em 2.5em;
 }
 
 /* follow */
 
+#follow {
+  padding-bottom: 25vh;
+}
+
 #up-arrow {
-  transform: translateY(100%);
+  transform: translateY(50%);
 }
 
 #up-arrow * {
