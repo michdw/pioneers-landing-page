@@ -5,7 +5,7 @@
   background-color: #b3b492;
 }
 .at-give {
-  background-color: #c5c563;
+  background-color: #c3b55b;
 }
 .at-follow {
   background-color: #ce6f52;
@@ -51,6 +51,10 @@
   float: right;
 }
 
+#info p {
+  margin-top: 0;
+}
+
 /* give */
 
 #give-btn {
@@ -62,7 +66,7 @@
   height: auto;
   font-size: 1.1em;
   text-decoration: none;
-  padding: .4em 2em;
+  padding: .35em 2em;
 }
 
 /* follow */
