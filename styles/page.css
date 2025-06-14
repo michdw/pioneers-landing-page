@@ -42,7 +42,8 @@ p {
 }
 
 a {
-  color: midnightblue;
+  color: #000;
+  font-weight: 700;
 }
 
 /* navbar */
