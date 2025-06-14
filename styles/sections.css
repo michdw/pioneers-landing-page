@@ -2,17 +2,17 @@
   background-color: #d9d9d9;
 }
 .at-info {
-  background-color: #a0a88c;
+  background-color: #b3b492;
 }
 .at-give {
-  background-color: #c9c953;
+  background-color: #c5c563;
 }
 .at-follow {
-  background-color: #d86947;
+  background-color: #ce6f52;
 }
 
 .panel {
-  min-height: 90vh;
+  min-height: 70vh;
   padding-top: 15vh;
   padding-bottom: 15vh;
   display: flex;
@@ -43,12 +43,6 @@
 
 /* info */
 
-#info {
-}
-
-#info p {
-}
-
 #profile-pic {
   width: 25vw;
   max-width: 175px;
@@ -58,34 +52,29 @@
 }
 
 /* give */
-#give p {
-}
 
-/* styled to match the mailerlite subscribe button in mailform.css */
-#give button {
-  background-color: #000000;
+#give-btn {
+  background-color: #000;
   border: none;
   border-radius: 4px;
   box-shadow: none;
-  color: #ffffff;
-  font-size: .95em;
-  line-height: 21px;
+  color: #fff;
   height: auto;
-  padding: 10px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-#give button a {
-  color: white;
+  font-size: 1.1em;
   text-decoration: none;
+  padding: .4em 2em;
 }
 
 /* follow */
 
-#follow {
-  min-height: 80vh;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+#up-arrow {
+  transform: translateY(100%);
 }
 
+#up-arrow * {
+  margin: 0;
+}
+
+#up-arrow p {
+  font-size: .9em;
+}

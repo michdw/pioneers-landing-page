@@ -17,7 +17,7 @@ section > * {
   max-width: 30em;
   margin: auto 10px;
 }
-h1, h2 {
+h1, h2, h3 {
   font-weight: 300;
 }
 h1 {
@@ -113,6 +113,11 @@ nav a {
 
 .dbl-arrow:hover {
   scale: 1.1;
+  cursor: pointer;
+}
+
+#up-arrow:hover {
+  cursor: pointer;
 }
 
 .invisible {
@@ -139,5 +144,11 @@ nav a {
 
   .nav-full {
     height: 20vh;
+  }
+}
+
+@media (min-width: 700px) {
+  body{
+    font-size: 115%;
   }
 }
