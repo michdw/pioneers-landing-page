@@ -5,7 +5,7 @@
   background-color: #b3b492;
 }
 .at-give {
-  background-color: #d7b967;
+  background-color: #d7b067;
 }
 .at-follow {
   background-color: #ce6f52;
@@ -53,7 +53,7 @@
 /* give */
 
 #give-btn {
-  background-color: #000;
+  background-color: #414124;
   border: none;
   border-radius: 4px;
   box-shadow: none;
