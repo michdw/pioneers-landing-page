@@ -2,7 +2,7 @@
   background-color: #d9d9d9;
 }
 .at-info {
-  background-color: #b2b5b6;
+  background-color: #aeb4b6;
 }
 .at-give {
   background-color: #d7b067;
@@ -21,6 +21,10 @@
   align-items: center;
 }
 
+#info h1, #give h1, #follow h1 {
+  color: #284049;
+}
+
 /* landing */
 #landing {
   padding-top: 20vh;
@@ -28,12 +32,12 @@
 
 #name-heading {
   margin: 0;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
 }
 
 #landing-icon {
-  width: 200px;
-  margin: 0;
+  width: 180px;
+  margin-bottom: 1em;
 }
 
 #landing p {
