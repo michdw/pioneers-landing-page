@@ -21,12 +21,8 @@
   align-items: center;
 }
 
-#info h1, #give h1 {
+#info h1, #give h1, #follow h1 {
   color: #284049;
-}
-
-#follow h1 {
-  color: #414124;
 }
 
 /* landing */
